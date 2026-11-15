@@ -1,5 +1,6 @@
 import './HomePage.css';
 import { useNavigate } from "react-router";
+import cat from '../assets/cat.png';
 
 export default function HomePage() {
     const navigate = useNavigate();
@@ -22,7 +23,7 @@ export default function HomePage() {
                     <div className="new-record-subtitle">把这一刻留下来。</div>
                 </div>
 
-                <img src="/src/assets/cat.png" alt="" className="cat"/>
+                <img src={cat} alt="" className="cat"/>
             </button>
 
             <button className="all-record" onClick={() => navigate("/records")}>

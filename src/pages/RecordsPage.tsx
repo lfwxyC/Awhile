@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { WritingRecord } from "../types/writingRecord.ts";
 import { getRecords } from "../db/record.ts";
 import './RecordsPage.css';
+import catSleep from '../assets/cat-sleep.png';
 
 // 取正文第一行非空文字作为标题
 function getPreview(content: string): string {
@@ -48,7 +49,7 @@ export default function RecordsPage() {
             </section>
 
             <footer className='records-footer'>
-                <img className='records-cat' src='src/assets/cat-sleep.png' alt='' />
+                <img className='records-cat' src={catSleep} alt='' />
             </footer>
         </main>
     )
