@@ -1,0 +1,73 @@
+.records-page {
+    font-family: "SourceHanSerif", serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+.records-header {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+}
+
+.records-header button {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.records-header h1 {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.records-list {
+    padding: 0 16px;
+}
+
+.record-item {
+    border: none;
+    background: transparent;
+    font-family: inherit;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.record-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+.record-title {
+    font-size: 16px;
+}
+
+.record-time {
+    color: #999;
+    font-size: 14px;
+}
+
+.record-chevron {
+    color: #999;
+}
+
+.records-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.records-cat {
+    width: 180px;
+}

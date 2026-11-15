@@ -1,0 +1,22 @@
+@import url("https://fontsapi.zeoseven.com/292/main/result.css");
+
+@font-face {
+    font-family: 'ShengXia';
+    src: url('../assets/ShengXia.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceHanSerif';
+    src: url('../assets/SourceHanSerifSC-VF.ttf') format('truetype');
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* 清除默认外边距 */
+    margin: 0;
+}

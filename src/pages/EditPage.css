@@ -1,0 +1,84 @@
+.edit-page {
+    font-family: "LXGW WenKai", sans-serif;
+    font-weight: normal;
+    color: #333;
+
+    /* 整个编辑页固定为一屏 */
+    height: 100dvh;
+
+    /* 纵向布局 */
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px 16px;
+}
+
+.edit-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-header button{
+    border: none;
+    background: transparent;
+}
+
+.edit-menu {
+    position: relative;
+}
+
+.edit-menu-popup {
+    position: absolute;
+    /* 弹窗顶部位于父容器高度的下方 */
+    top: 100%;
+    /* 弹窗右边缘和父容器右边缘对齐 */
+    right: 0;
+    /* 让弹窗显示在普通内容上方 */
+    z-index: 10;
+    background: #fff;
+    width: 120px;
+}
+
+.edit-delete {
+    display: flex;
+    gap: 10px;
+    color: #b94a48;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.edit-stats {
+    display: flex;
+    justify-content: flex-end;
+
+    font-size: 12px;
+    color: #999;
+
+    padding-bottom: 16px;
+}
+
+.edit-content {
+    /* 去掉输入框的边框 */
+    border: none;
+    /* 去掉聚焦时浏览器显示的轮廓线 */
+    outline: none;
+    /* 去掉右下角可以拖动调整大小的小三角 */
+    resize: none;
+
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: inherit;
+    letter-spacing: 0.05em;
+    color: inherit;
+
+    /* 占满页面剩余空间 */
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+
+    /* 正文在 textarea 内部滚动 */
+    overflow-y: auto;
+
+    /* 给正文末尾保留可滚动的空白 */
+    padding-bottom: 300px;
+}

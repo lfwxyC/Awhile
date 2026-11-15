@@ -1,0 +1,61 @@
+.home-page{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    justify-content: space-evenly;
+}
+
+.bird{
+    width: 60px;
+    align-self: flex-end;
+}
+
+.quote-content{
+    margin: 0;
+    font-family: 'ShengXia', cursive;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.new-record{
+    height: 150px;
+    border-radius: 24px;
+    background: #fdfbf8;
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 18px;
+    position: relative;
+    font-family: "SourceHanSerif", serif;
+    border: 0;
+}
+
+.new-record-title{
+    font-size: 24px;
+}
+
+.new-record-subtitle{
+    font-size: 12px;
+    color: gray;
+}
+
+.cat{
+    position: absolute;
+    right: 18px;
+    bottom: 0;
+    width: 180px;
+}
+
+.all-record{
+    background: none;
+    border: 0;
+    font-size: 14px;
+    font-family: "SourceHanSerif", serif;
+    color: #666;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
